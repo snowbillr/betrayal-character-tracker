@@ -1,16 +1,29 @@
 import './App.scss';
 
-import { Trait } from './components/trait/Trait';
+import { useState } from 'react';
+
+import { Screens } from './components/screens';
+
+const SCREENS = {
+  characterSelect: 'characterSelect',
+  traits: 'traits',
+}
 
 function App() {
+  const [screen, setScreen] = useState(SCREENS.traits);
+
+  function renderScreen() {
+    switch(screen) {
+      case SCREENS.traits:
+        return <Screens.TraitGrid />
+      default:
+        return null;
+    }
+  }
+
   return (
     <div className="app">
-      <div className="trait-grid">
-        <Trait name="might" />
-        <Trait name="sanity" />
-        <Trait name="speed" />
-        <Trait name="knowledge" />
-      </div>
+      {renderScreen()}
     </div>
   );
 }
