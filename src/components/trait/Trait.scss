@@ -13,36 +13,6 @@
 
   color: $cream;
 
-  .trait-button {
-    background: $navy;
-    color: $cream;
-
-    font-size: $sm;
-  }
-
-  .decrement {
-    grid-area: a;
-  }
-
-  .increment {
-    grid-area: c;
-  }
-
-  .value {
-    grid-area: b;
-    text-align: center;
-
-    .value-text {
-      display: inline-block;
-
-      padding: 5px;
-
-      color: $lime;
-      font-weight: 700;
-      font-size: $lg;
-    }
-  }
-
   .name {
     grid-area: d;
 
