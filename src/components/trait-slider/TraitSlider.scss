@@ -1,0 +1,51 @@
+@import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
+.trait-slider {
+  display: flex;
+  align-items: center;
+
+  .button {
+    display: block;
+
+    width: 3rem;
+    height: 3rem;
+
+    background: $navy;
+    color: $lime;
+    font-size: $md;
+    border: 1px solid $gray;
+    border-radius: 100%;
+
+    &[disabled] {
+      color: $gray;
+    }
+  }
+
+  .values {
+    display: flex;
+    align-items: center;
+
+    margin: 0 10px;
+
+    .value {
+      flex: 1;
+      font-size: $md;
+      color: $gray;
+
+      &.current {
+        color: $lime;
+      font-size: $lg;
+      }
+    }
+
+    .separator {
+      flex: 1;
+
+      margin: 0 5px;
+
+      font-size: $sm;
+      color: $gray;
+    }
+  }
+}
