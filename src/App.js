@@ -10,12 +10,14 @@ const SCREENS = {
 }
 
 function App() {
-  const [screen, setScreen] = useState(SCREENS.traits);
+  const [screen, setScreen] = useState(SCREENS.characterSelect);
 
   function renderScreen() {
     switch(screen) {
       case SCREENS.traits:
         return <Screens.TraitGrid />
+      case SCREENS.characterSelect:
+        return <Screens.CharacterSelect />
       default:
         return null;
     }
