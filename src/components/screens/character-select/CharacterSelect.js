@@ -19,6 +19,7 @@ export function CharacterSelect({ onSelect }) {
           <div className="character">
             <img className="portrait" src={CharacterPortraitUtil.portraitForCharacter(character.id)} alt={character.name} />
             <h2 className="name">{character.name}</h2>
+            <button className="select-button" onClick={() => onSelect(character)}>Choose {character.name.split(" ")[0]}</button>
             <div className="traits">
               <div className="trait">
                 <MightIcon color="#A0C151" />
@@ -37,7 +38,6 @@ export function CharacterSelect({ onSelect }) {
                 <TraitSlider controlsEnabled={false} values={character.traits.knowledge.values} initialValueIndex={character.traits.knowledge.initialIndex} size="sm" />
               </div>
             </div>
-            <button className="select-button" onClick={() => onSelect(character)}>Choose {character.name.split(" ")[0]}</button>
           </div>
         );
       })}

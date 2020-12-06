@@ -36,6 +36,19 @@
       text-shadow: $cream 0 0 5px;
     }
 
+    .select-button {
+      display: block;
+      margin: 0 auto $md;
+
+      background: $navy;
+      color: $cream;
+
+      font-size: $sm;
+      padding: 5px 20px;
+      border: 1px solid $cream;
+      border-radius: 20px;
+    }
+
     .traits {
       display: grid;
       grid-template-columns: 1fr;
@@ -48,19 +61,6 @@
 
         margin-bottom: $xs;
       }
-    }
-
-    .select-button {
-      display: block;
-      margin: 0 auto;
-
-      background: $navy;
-      color: $cream;
-
-      font-size: $sm;
-      padding: 5px 20px;
-      border: 1px solid $cream;
-      border-radius: 20px;
     }
   }
 }
