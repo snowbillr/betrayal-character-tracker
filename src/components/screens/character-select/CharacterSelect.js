@@ -65,7 +65,7 @@ export function CharacterSelect({ onSelect }) {
                 <TraitSlider controlsEnabled={false} values={character.traits.knowledge.values} initialValueIndex={character.traits.knowledge.initialIndex} size="sm" />
               </div>
             </div>
-            <button className="select-button">Choose {character.name.split(" ")[0]}</button>
+            <button className="select-button" onClick={() => onSelect(character)}>Choose {character.name.split(" ")[0]}</button>
           </div>
         );
       })}
