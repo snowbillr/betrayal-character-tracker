@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/betrayal-character-tracker/static/css/main.762bb3d6.chunk.css",
-    "main.js": "/betrayal-character-tracker/static/js/main.5dadb435.chunk.js",
-    "main.js.map": "/betrayal-character-tracker/static/js/main.5dadb435.chunk.js.map",
+    "main.css": "/betrayal-character-tracker/static/css/main.a576a9db.chunk.css",
+    "main.js": "/betrayal-character-tracker/static/js/main.ce87de1e.chunk.js",
+    "main.js.map": "/betrayal-character-tracker/static/js/main.ce87de1e.chunk.js.map",
     "runtime-main.js": "/betrayal-character-tracker/static/js/runtime-main.3abc7f2e.js",
     "runtime-main.js.map": "/betrayal-character-tracker/static/js/runtime-main.3abc7f2e.js.map",
     "static/js/2.54420aa2.chunk.js": "/betrayal-character-tracker/static/js/2.54420aa2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.b0a80e7d.chunk.js": "/betrayal-character-tracker/static/js/3.b0a80e7d.chunk.js",
     "static/js/3.b0a80e7d.chunk.js.map": "/betrayal-character-tracker/static/js/3.b0a80e7d.chunk.js.map",
     "index.html": "/betrayal-character-tracker/index.html",
-    "static/css/main.762bb3d6.chunk.css.map": "/betrayal-character-tracker/static/css/main.762bb3d6.chunk.css.map",
+    "static/css/main.a576a9db.chunk.css.map": "/betrayal-character-tracker/static/css/main.a576a9db.chunk.css.map",
     "static/js/2.54420aa2.chunk.js.LICENSE.txt": "/betrayal-character-tracker/static/js/2.54420aa2.chunk.js.LICENSE.txt",
     "static/media/brandon-jaspers.00ebc5d0.png": "/betrayal-character-tracker/static/media/brandon-jaspers.00ebc5d0.png",
     "static/media/darren-williams.1afb6c05.png": "/betrayal-character-tracker/static/media/darren-williams.1afb6c05.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.3abc7f2e.js",
     "static/js/2.54420aa2.chunk.js",
-    "static/css/main.762bb3d6.chunk.css",
-    "static/js/main.5dadb435.chunk.js"
+    "static/css/main.a576a9db.chunk.css",
+    "static/js/main.ce87de1e.chunk.js"
   ]
 }
