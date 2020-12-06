@@ -13,7 +13,6 @@
 
     background: $navy;
     color: $lime;
-    font-size: $md;
     border: 1px solid $gray;
     border-radius: 100%;
 
@@ -30,12 +29,10 @@
 
     .value {
       flex: 1;
-      font-size: $md;
       color: $gray;
 
       &.current {
         color: $lime;
-      font-size: $lg;
       }
     }
 
@@ -44,8 +41,41 @@
 
       margin: 0 5px;
 
-      font-size: $sm;
       color: $gray;
+    }
+  }
+
+  &.md {
+    .button {
+      font-size: $md;
+    }
+    .values {
+      .value {
+        font-size: $md;
+        &.current {
+          font-size: $lg;
+        }
+      }
+    }
+    .separator {
+      font-size: $sm;
+    }
+  }
+
+  &.sm {
+    .button {
+      font-size: $sm;
+    }
+    .values {
+      .value {
+        font-size: $sm;
+        &.current {
+          font-size: $md;
+        }
+      }
+    }
+    .separator {
+      font-size: $xs;
     }
   }
 }

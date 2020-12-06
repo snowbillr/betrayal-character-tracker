@@ -2,18 +2,5 @@
 @import "./styles/sizes.scss";
 
 .app {
-  margin: $md $sm;
-
-  .trait-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 40px;
-    column-gap: 20px;
-
-    @media screen and (max-width: 375px) {
-      grid-template-columns: 1fr;
-    }
-
-    margin: 0 auto;
-  }
+  margin: $md $sm $xl;
 }

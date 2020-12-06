@@ -2,9 +2,11 @@ import "./TraitSlider.scss";
 
 import { useState } from "react";
 
-export function TraitSlider() {
-  const values = [2, 3, 3, 3, 5];
-  const [currentValueIndex, setCurrentValueIndex] = useState(2);
+/*
+ * `size` is either "md" or "sm"
+ */
+export function TraitSlider({ controlsEnabled = true, values, initialValueIndex, size="md" }) {
+  const [currentValueIndex, setCurrentValueIndex] = useState(initialValueIndex);
 
   function nextValue() {
     if (currentValueIndex === values.length - 1) return;
@@ -19,8 +21,8 @@ export function TraitSlider() {
   }
 
   return (
-    <div className="trait-slider">
-      <button className="button" onClick={previousValue} disabled={currentValueIndex === 0}>&minus;</button>
+    <div className={`trait-slider ${size}`}>
+      {controlsEnabled ? <button className="button" onClick={previousValue} disabled={currentValueIndex === 0}>&minus;</button> : null}
       <div className="values">
         {values.map((value, i) => {
           const classNames = ["value"];
@@ -38,7 +40,7 @@ export function TraitSlider() {
           );
         })}
       </div>
-      <button className="button" onClick={nextValue} disabled={currentValueIndex === values.length - 1}>+</button>
+      {controlsEnabled ? <button className="button" onClick={nextValue} disabled={currentValueIndex === values.length - 1}>+</button> : null}
     </div>
   );
 }
