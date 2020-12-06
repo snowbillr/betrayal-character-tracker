@@ -1,12 +1,16 @@
 import "./TraitSlider.scss";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 /*
  * `size` is either "md" or "sm"
  */
-export function TraitSlider({ controlsEnabled = true, values, initialValueIndex, size="md" }) {
+export function TraitSlider({ controlsEnabled = true, values, initialValueIndex, size="md", onChange }) {
   const [currentValueIndex, setCurrentValueIndex] = useState(initialValueIndex);
+
+  useEffect(() => {
+    onChange && onChange(values[currentValueIndex]);
+  }, [currentValueIndex]);
 
   function nextValue() {
     if (currentValueIndex === values.length - 1) return;

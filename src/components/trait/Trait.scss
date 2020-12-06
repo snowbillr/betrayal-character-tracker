@@ -21,4 +21,22 @@
       font-size: $md;
     }
   }
+
+  .trait-button {
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    background: $gray;
+    color: $cream;
+
+    border-radius: 20px;
+    padding: 5px 20px;
+
+    &-label {
+      margin-left: 10px;
+      font-size: $sm;
+    }
+  }
 }
