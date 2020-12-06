@@ -34,6 +34,8 @@
       color: $gray;
       font-size: $sm;
 
+      transition: font-size 0.2s ease-out;
+
       &.current {
         color: $lime;
         font-size: $md;
