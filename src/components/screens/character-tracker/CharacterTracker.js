@@ -2,14 +2,18 @@ import { KnowledgeIcon } from '../../icons/KnowledgeIcon';
 import { MightIcon } from '../../icons/MightIcon';
 import { SanityIcon } from '../../icons/SanityIcon';
 import { SpeedIcon } from '../../icons/SpeedIcon';
+import "./CharacterTracker.scss";
+
 import { Trait } from "../../trait/Trait";
 
-import "./CharacterTracker.scss";
+import { CharacterPortraitUtil } from "../../../utils/character-portrait-util";
+
 
 export function CharacterTracker({ character }) {
   return (
     <div className="character-tracker">
       <h1 className="character-name">{character.name}</h1>
+      <img className="character-portrait" src={CharacterPortraitUtil.portraitForCharacter(character.id)} alt={character.name} />
         <div className="traits">
           <div>
             <Trait

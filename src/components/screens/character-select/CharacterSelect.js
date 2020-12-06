@@ -1,42 +1,14 @@
 import characterData from "../../../data/characters.json";
 
-import brandonJaspers from "../../../assets/images/brandon-jaspers.png";
-import darrenWilliams from "../../../assets/images/darren-williams.png";
-import fatherRhinehardt from "../../../assets/images/father-rhinehardt.png";
-import heatherGranville from "../../../assets/images/heather-granville.png";
-import jennyLeclerc from "../../../assets/images/jenny-leclerc.png";
-import madameZostra from "../../../assets/images/madame-zostra.png";
-import missyDubourde from "../../../assets/images/missy-dubourde.png";
-import oxBellows from "../../../assets/images/ox-bellows.png";
-import peterAkimoto from "../../../assets/images/peter-akimoto.png";
-import professorLongfellow from "../../../assets/images/professor-longfellow.png";
-import vivianLopez from "../../../assets/images/vivian-lopez.png";
-import zoeIngstrom from "../../../assets/images/zoe-ingstrom.png";
-
 import "./CharacterSelect.scss";
+
 import { MightIcon } from '../../icons/MightIcon';
 import { SpeedIcon } from '../../icons/SpeedIcon';
 import { SanityIcon } from '../../icons/SanityIcon';
 import { KnowledgeIcon } from '../../icons/KnowledgeIcon';
 import { TraitSlider } from '../../trait-slider/TraitSlider';
 
-function portraitForCharacter(characterId) {
-  switch(characterId) {
-    case "brandon-jaspers": return brandonJaspers;
-    case "darren-williams": return darrenWilliams;
-    case "father-rhinehardt": return fatherRhinehardt;
-    case "heather-granville": return heatherGranville;
-    case "jenny-leclerc": return jennyLeclerc;
-    case "madame-zostra": return madameZostra;
-    case "missy-dubourde": return missyDubourde;
-    case "ox-bellows": return oxBellows;
-    case "peter-akimoto": return peterAkimoto;
-    case "professor-longfellow": return professorLongfellow;
-    case "vivian-lopez": return vivianLopez ;
-    case "zoe-ingstrom": return zoeIngstrom ;
-    default: return null;
-  }
-}
+import { CharacterPortraitUtil } from "../../../utils/character-portrait-util";
 
 export function CharacterSelect({ onSelect }) {
   return (
@@ -45,7 +17,7 @@ export function CharacterSelect({ onSelect }) {
       {characterData.map(character => {
         return (
           <div className="character">
-            <img className="portrait" src={portraitForCharacter(character.id)} alt={character.name} />
+            <img className="portrait" src={CharacterPortraitUtil.portraitForCharacter(character.id)} alt={character.name} />
             <h2 className="name">{character.name}</h2>
             <div className="traits">
               <div className="trait">

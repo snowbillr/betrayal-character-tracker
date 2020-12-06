@@ -9,6 +9,18 @@
     color: $cream;
     text-shadow: $cream 0 0 5px;
     text-align: center;
+
+    margin-bottom: $sm;
+  }
+
+  .character-portrait {
+    display: block;
+    margin: 0 auto;
+
+    width: 125px;
+    height: 125px;
+
+    margin-bottom: $lg;
   }
 
   .traits {
