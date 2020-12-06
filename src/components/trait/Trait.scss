@@ -2,22 +2,23 @@
 @import "../../styles/sizes.scss";
 
 .trait {
-  display: grid;
-  grid-template:
-    "a b c"
-    "d d d";
-  justify-content: center;
-  align-items: center;
-
   width: 100%;
 
   color: $cream;
 
-  .name {
-    grid-area: d;
+  .trait-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    text-transform: capitalize;
-    text-align: center;
-    font-size: $md;
+    .trait-icon {
+      margin-right: 10px;
+    }
+
+    .trait-name {
+      text-transform: capitalize;
+      text-align: center;
+      font-size: $md;
+    }
   }
 }

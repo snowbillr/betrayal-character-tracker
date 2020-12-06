@@ -1,7 +1,7 @@
-import { TraitGrid } from './trait-grid/TraitGrid';
+import { CharacterTracker } from './character-tracker/CharacterTracker';
 import { CharacterSelect } from './character-select/CharacterSelect';
 
 export const Screens = {
-  TraitGrid,
+  TraitGrid: CharacterTracker,
   CharacterSelect
 };
