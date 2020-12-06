@@ -48,8 +48,7 @@
       border: 1px solid $cream;
       border-radius: 20px;
 
-      transition: transform 0.2s ease-out;
-
+      transition: transform 0.1s ease-out;
       &:active {
         transform: scale(0.9);
       }
