@@ -30,7 +30,7 @@ export function Trait({ name, values, initialValueIndex, icon }) {
         </div>
         <h2 className="trait-name">{name}</h2>
       </div>
-      <TraitSlider values={values} initialValueIndex={initialValueIndex} size="sm" onChange={setValue}/>
+      <TraitSlider values={values} initialValueIndex={initialValueIndex} onChange={setValue}/>
       <button className="trait-button" onClick={roll}>
         <DiceIcon color="#EFC9A7" />
         <span className="trait-button-label">Roll</span>

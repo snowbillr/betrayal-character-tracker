@@ -23,19 +23,19 @@ export function CharacterSelect({ onSelect }) {
             <div className="traits">
               <div className="trait">
                 <MightIcon color="#A0C151" />
-                <TraitSlider controlsEnabled={false} values={character.traits.might.values} initialValueIndex={character.traits.might.initialIndex} size="sm" />
+                <TraitSlider controlsEnabled={false} values={character.traits.might.values} initialValueIndex={character.traits.might.initialIndex} />
               </div>
               <div className="trait">
                 <SpeedIcon color="#A0C151" />
-                <TraitSlider controlsEnabled={false} values={character.traits.speed.values} initialValueIndex={character.traits.speed.initialIndex} size="sm" />
+                <TraitSlider controlsEnabled={false} values={character.traits.speed.values} initialValueIndex={character.traits.speed.initialIndex} />
               </div>
               <div className="trait">
                 <SanityIcon color="#A0C151" />
-                <TraitSlider controlsEnabled={false} values={character.traits.sanity.values} initialValueIndex={character.traits.sanity.initialIndex} size="sm" />
+                <TraitSlider controlsEnabled={false} values={character.traits.sanity.values} initialValueIndex={character.traits.sanity.initialIndex} />
               </div>
               <div className="trait">
                 <KnowledgeIcon color="#A0C151" />
-                <TraitSlider controlsEnabled={false} values={character.traits.knowledge.values} initialValueIndex={character.traits.knowledge.initialIndex} size="sm" />
+                <TraitSlider controlsEnabled={false} values={character.traits.knowledge.values} initialValueIndex={character.traits.knowledge.initialIndex} />
               </div>
             </div>
           </div>

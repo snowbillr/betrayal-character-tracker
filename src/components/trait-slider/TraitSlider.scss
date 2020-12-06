@@ -16,6 +16,8 @@
     border: 1px solid $gray;
     border-radius: 100%;
 
+    font-size: $sm;
+
     &[disabled] {
       color: $gray;
     }
@@ -30,9 +32,11 @@
     .value {
       flex: 1;
       color: $gray;
+      font-size: $sm;
 
       &.current {
         color: $lime;
+        font-size: $md;
       }
     }
 
@@ -42,39 +46,6 @@
       margin: 0 5px;
 
       color: $gray;
-    }
-  }
-
-  &.md {
-    .button {
-      font-size: $md;
-    }
-    .values {
-      .value {
-        font-size: $md;
-        &.current {
-          font-size: $lg;
-        }
-      }
-    }
-    .separator {
-      font-size: $sm;
-    }
-  }
-
-  &.sm {
-    .button {
-      font-size: $sm;
-    }
-    .values {
-      .value {
-        font-size: $sm;
-        &.current {
-          font-size: $md;
-        }
-      }
-    }
-    .separator {
       font-size: $xs;
     }
   }

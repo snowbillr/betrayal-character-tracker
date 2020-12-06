@@ -10,7 +10,7 @@ export function TraitSlider({ controlsEnabled = true, values, initialValueIndex,
 
   useEffect(() => {
     onChange && onChange(values[currentValueIndex]);
-  }, [currentValueIndex]);
+  }, [currentValueIndex, onChange, values]);
 
   function nextValue() {
     if (currentValueIndex === values.length - 1) return;
